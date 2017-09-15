@@ -1,7 +1,6 @@
-package shop.vav.com.shoppingcart.ui.customerlist;
+package shop.vav.com.shoppingcart.ui.checkout;
 
-import android.content.Context;
-import android.net.Uri;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,10 +12,10 @@ import shop.vav.com.shoppingcart.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CustomerListFragment extends Fragment {
+public class CheckoutFragment extends Fragment {
     private View mRootView;
 
-    public CustomerListFragment() {
+    public CheckoutFragment() {
         // Required empty public constructor
     }
 
@@ -25,14 +24,8 @@ public class CustomerListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-
-         mRootView = inflater.inflate(R.layout.fragment_customer_list, container, false);
-
+         mRootView= inflater.inflate(R.layout.fragment_checkout, container, false);
          return mRootView;
     }
-
-
-
 
 }

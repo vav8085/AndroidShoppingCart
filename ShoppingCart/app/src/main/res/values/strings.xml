@@ -18,6 +18,8 @@
     <string name="category">Category</string>
     <string name="name">Name</string>
     <string name="product_description">Product Image</string>
+    <string name="qty">qty</string>
+    <string name="delete">Delete</string>
 
 
 </resources>

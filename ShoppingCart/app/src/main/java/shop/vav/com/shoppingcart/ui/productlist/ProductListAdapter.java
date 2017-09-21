@@ -86,6 +86,7 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
         public void onClick(View view) {
             Product selectedProduct = mProducts.get(getLayoutPosition());
             mListener.onSelectProduct(selectedProduct);
+            notifyDataSetChanged();
         }
 
         @Override

@@ -87,13 +87,17 @@ public class CustomerListAdapter extends RecyclerView.Adapter<CustomerListAdapte
 
         @Override
         public boolean onLongClick(View view) {
-            return false;
+            Customer selectedCustomer = mCustomers.get(getLayoutPosition());
+            mListener.onLongClickCustomer(selectedCustomer);
+            return true;
         }
 
         @Override
         public void onClick(View view) {
             shouldHighlightSelectedCustomer = true;
             selectedposition = getLayoutPosition();
+            Customer selectedCustomer = mCustomers.get(selectedposition);
+            mListener.onSelectedCustomer(selectedCustomer);
 
         }
     }

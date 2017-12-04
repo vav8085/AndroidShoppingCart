@@ -6,6 +6,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="no_product_found">No product found!</string>
     <string name="no_customer_found">No customer found!</string>
+    <string name="no_item_found">No item found!</string>
     <string name="label_sub_total">Sub Total</string>
     <string name="label_of_0_dollor">$0.0</string>
     <string name="label_total">Total Amount</string>

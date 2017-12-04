@@ -12,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import shop.vav.com.shoppingcart.R;
+import shop.vav.com.shoppingcart.ui.checkout.CheckoutFragment;
+import shop.vav.com.shoppingcart.ui.customerlist.CustomerListFragment;
 import shop.vav.com.shoppingcart.ui.productlist.ProductListAdapter;
 import shop.vav.com.shoppingcart.ui.productlist.ProductListFragment;
 
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        openFragment(new ProductListFragment(),"Product List");
+        openFragment(new CheckoutFragment(),"Checkout List");
     }
 
     private void openFragment(Fragment fragment, String title) {

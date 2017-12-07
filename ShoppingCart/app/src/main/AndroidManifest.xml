@@ -3,6 +3,7 @@
     package="shop.vav.com.shoppingcart">
 
     <application
+        android:name=".core.ShoppingCartApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

@@ -17,14 +17,19 @@ public class ShoppingCartApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        getAppComponent();
+         getAppComponent();
     }
 
-    private void getAppComponent() {
+    public static ShoppingCartApplication getInstance() {
+        return instance;
+    }
+
+    public AppComponent getAppComponent() {
         if(appComponent==null){
             appComponent = DaggerAppComponent.builder()
                     .appModule(new AppModule(this))
                     .build();
         }
+        return appComponent;
     }
 }
